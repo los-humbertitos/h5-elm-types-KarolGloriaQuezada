@@ -6,7 +6,7 @@ module Helper exposing
     , categoricalGrade
     )
 
--- GRADE STATUS
+
 
 
 type GradeStatus
@@ -33,7 +33,7 @@ gradeToStatus grade =
 
 
 
--- AIRPLANE STATUS
+
 
 
 type AirplaneStatus
