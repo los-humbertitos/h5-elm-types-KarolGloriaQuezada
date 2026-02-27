@@ -6,7 +6,6 @@ module Helper exposing
     , categoricalGrade
     )
 
-
 -- GRADE STATUS
 
 
