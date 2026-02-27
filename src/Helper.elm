@@ -1,23 +1,10 @@
-module Helper exposing
-    ( AirplaneStatus(..)
-    , GradeStatus(..)
-    , airplaneScheduleAction
-    , airportAction
-    , categoricalGrade
-    )
-
-
+module Helper exposing (..)
 
 
 type GradeStatus
     = Approved
     | Failed
     | Pending
-
-
-categoricalGrade : List Float -> List GradeStatus
-categoricalGrade grades =
-    List.map gradeToStatus grades
 
 
 gradeToStatus : Float -> GradeStatus
@@ -32,8 +19,9 @@ gradeToStatus grade =
         Failed
 
 
-
-
+categoricalGrade : List Float -> List GradeStatus
+categoricalGrade grades =
+    List.map gradeToStatus grades
 
 
 type AirplaneStatus
