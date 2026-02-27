@@ -1,21 +1,16 @@
 module Helper exposing
-    ( GradeStatus(..)
-    , categoricalGrade
-    , AirplaneStatus(..)
+    ( AirplaneStatus(..)
+    , GradeStatus(..)
     , airplaneScheduleAction
     , airportAction
+    , categoricalGrade
     )
-
-
 
 
 type GradeStatus
     = Approved
     | Failed
     | Pending
-
-
-
 
 
 categoricalGrade : List Float -> List GradeStatus
@@ -35,18 +30,11 @@ gradeToStatus grade =
         Failed
 
 
-
-
-
-
 type AirplaneStatus
     = OnTime
     | Boarding
     | Delayed
     | Cancelled
-
-
-
 
 
 airplaneScheduleAction : AirplaneStatus -> String
@@ -63,9 +51,6 @@ airplaneScheduleAction status =
 
         Boarding ->
             "Buscar boleto"
-
-
-
 
 
 airportAction : List AirplaneStatus -> List String
